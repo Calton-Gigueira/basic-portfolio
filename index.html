@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calton Gigueira | Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/1-removebg-preview.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Calton</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="btn">&#9776;</button>
+      </nav>
+    </header>
+
+    <section>
+      <div class="s-container">
+        <div class="content">
+          <span class="subtitle">Hello</span>
+          <h1 class="title">
+            I'm <span>Calton <br /></span> a Front-end developer
+          </h1>
+          <p class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            sunt tempore iste hic, nobis asperiores nesciunt, molestiae iure
+            quia ipsum quibusdam exercitationem natus, vel eveniet minus illum
+            dolore numquam eum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptate ea eius quibusdam sapiente laudantium
+            expedita amet quae velit repellat, quod incidunt a esse autem beatae
+            est quisquam dolores accusamus aliquid!
+          </p>
+          <div class="buttons">
+            <a href="#">Hire me</a>
+            <button>Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/1.png" alt="Image" />
+        </div>
+      </div>
+    </section>
+    <script>
+      const btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", () => {
+        document.querySelector("header ul").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
